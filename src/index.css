@@ -31,3 +31,69 @@ li{
 .brandLogo{
   height: 70px;
 }
+
+.image-list{
+  grid-template-columns: repeat(10, 1fr);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.image-item:nth-child(1){
+  transform: rotate(-7.44deg);
+  transition: 1s ease-in-out ;
+  &:hover{
+    transform: scale(1.5);
+  }
+}
+.image-item:nth-child(2){
+  transform: rotate(9.48deg);
+  transition: 1s ease-in-out ;
+  &:hover{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+.image-item:nth-child(3){
+  transform: rotate(-7.44deg);
+    transition: 1s ease-in-out ;
+  &:hover{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+.image-item:nth-child(4){
+  transform: rotate(9.48deg);
+    transition: 1s ease-in-out ;
+  &:hover{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+.image-item:nth-child(5){
+  transform: rotate(-7.44deg);
+    transition: 1s ease-in-out ;
+  &:hover{
+    transform: scale(1.5);
+    z-index: 10;
+  }
+}
+
+
+
+.snapImage-item:nth-child(1){
+  transform: rotate(-7.44deg);
+}
+.snapImage-item:nth-child(2){
+  transform: rotate(9.48deg);
+}
+.snapImage-item:nth-child(3){
+  transform: rotate(-7.44deg);
+
+}
+.snapImage-item:nth-child(4){
+  transform: rotate(9.48deg);
+}
+
+.imageCenter{
+  transform: translate(-50%, -50%);
+}

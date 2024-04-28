@@ -1,11 +1,11 @@
 // import React from 'react'
-
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div className="w-full py-5 px-4">
      <ul className="flex justify-between pb-2 items-center">
         <li className="hidden text-secondary capitalize font-patino">contact me</li>
-        <h1 className="logo font-planet text-secondary text-xl">xander</h1>
+        <Link to="/"><h1 className="logo font-planet text-secondary text-xl">xander</h1></Link>
         <li className="hidden text-secondary capitalize font-patino">films</li>
         <li className="text-secondary capitalize font-patino text-lg">menu</li>
      </ul>
