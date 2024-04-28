@@ -2,7 +2,6 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import SlideShow from "../components/SlideShow"
-import rick from "../assets/images/IMG_7483.JPG"
 
 function Home() {
   return (
@@ -19,7 +18,6 @@ function Home() {
         </p>
         <div>
           <div>
-            <img src={rick} alt="" />
           </div>
           <div></div>
           <div></div>
