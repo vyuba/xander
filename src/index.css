@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 0 0 0;
+    --color-secondary: 255 255 255;
+    --color-accent: 29 29 29;
+  };
+}
+
+@font-face {
+  font-family: "planet";
+  src: url(/font/planet_kosmos/PLANK___.TTF) format(truetype);
+}
+
+@font-face {
+  font-family: "patino";
+  src: url(/font/patinio_futura/Patinio Futura.ttf) format(truetype);
+}
+
+p{
+  font-family: patino;
+}
+
+li{
+  text-decoration: underline;
+}
+
+.brandLogo{
+  height: 70px;
+}
