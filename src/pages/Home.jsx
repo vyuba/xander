@@ -2,7 +2,7 @@
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import SlideShow from "../components/SlideShow"
-// import video1 from "../assets/images/IMG_7509.mp4"
+import video1 from "../assets/images/IMG_7509.MP4"
 
 function Home() {
   return (
@@ -12,12 +12,12 @@ function Home() {
         <div className="relative  my-8"> 
           <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]">
           </div>
-          <div className="w-full h-[396px] grid grid-cols-2 place-items-center">
-            <div className="snapImage-item object-cover z-10 bg-accent w-[122px] h-[155px]">
+          <div className="w-full h-[396px] grid gap-5 grid-cols-2 place-items-center">
+            <div className="snapImage-item object-cover z-10 bg-accent w-[155px] h-[200px] rounded">
             </div>  
-            <div className="snapImage-item bg-accent w-[122px] h-[155px]"></div>  
-            <div className="snapImage-item bg-accent w-[122px] h-[155px]"></div>  
-            <div className="snapImage-item bg-accent w-[122px] h-[155px]"></div>  
+            <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>  
+            <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>  
+            <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>  
         </div>
         </div>
         
@@ -36,13 +36,15 @@ function Home() {
         <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">explore work</h6>
         <div className="slider-wrapper overflow-hidden h-[250px] w-full px-4 pt-4">
           <div className="image-list grid place-items-center h-[250px]  w-full gap-1">
-            <div className="image-item object-cover z-10 bg-accent w-[122px] h-[155px]">
+            <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded">
+              <video className="object-cover w-full h-full"  autoPlay loop muted playsInline>
+                <source src={video1} type="video/MP4" />
+              </video>
             </div>  
-            
-            <div className="image-item bg-accent w-[122px] h-[155px]"></div>  
-            <div className="image-item bg-accent w-[122px] h-[155px]"></div>  
-            <div className="image-item bg-accent w-[122px] h-[155px]"></div>  
-            <div className="image-item bg-accent w-[122px] h-[155px]"></div>  
+            <div className="image-item bg-accent w-[155px] h-[200px] rounded"></div>  
+            <div className="image-item bg-accent w-[155px] h-[200px] rounded"></div>  
+            <div className="image-item bg-accent w-[155px] h-[200px] rounded"></div>  
+            <div className="image-item bg-accent w-[155px] h-[200px] rounded"></div>  
           </div>
         </div>
         <Footer/>

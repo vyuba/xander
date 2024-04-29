@@ -42,14 +42,14 @@ li{
   transform: rotate(-7.44deg);
   transition: 1s ease-in-out ;
   &:hover{
-    transform: scale(1.5);
+    transform: rotate(0);
   }
 }
 .image-item:nth-child(2){
   transform: rotate(9.48deg);
   transition: 1s ease-in-out ;
   &:hover{
-    transform: scale(1.5);
+    transform: rotate(0);
     z-index: 10;
   }
 }
@@ -57,7 +57,7 @@ li{
   transform: rotate(-7.44deg);
     transition: 1s ease-in-out ;
   &:hover{
-    transform: scale(1.5);
+    transform: rotate(0);
     z-index: 10;
   }
 }
@@ -65,7 +65,7 @@ li{
   transform: rotate(9.48deg);
     transition: 1s ease-in-out ;
   &:hover{
-    transform: scale(1.5);
+    transform: rotate(0);
     z-index: 10;
   }
 }
@@ -73,7 +73,7 @@ li{
   transform: rotate(-7.44deg);
     transition: 1s ease-in-out ;
   &:hover{
-    transform: scale(1.5);
+    transform: rotate(0);
     z-index: 10;
   }
 }
