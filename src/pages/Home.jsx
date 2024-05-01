@@ -5,7 +5,7 @@ import SlideShow from "../components/SlideShow";
 import video1 from "../assets/images/IMG_7509.MP4";
 import video2 from "../assets/images/IMG_7510.MP4";
 // import video3 from "../assets/images/IMG_7508.MP4"
-import gridImg1 from "../assets/images/IMG_7483.JPG";
+// import gridImg1 from "../assets/images/IMG_7483.JPG";
 import Loader from "./LoaderPage";
 
 function Home() {
@@ -33,20 +33,19 @@ function Home() {
         <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
       </div>
     </div>
-
     <h6 className="capitalize font-patino pl-4 text-secondary underline text-xl">
       brands i have worked with
     </h6>
     <SlideShow />
     <p className="font-patino text-secondary pl-4 ">
       Welcome to Xander Portfolio! Capturing moments and telling stories
-      through the lens is not just a profession; it's our passion. With a keen
+      through the lens is not just a profession; its our passion. With a keen
       eye for detail and a dedication to creativity, we strive to produce
       captivating imagery and cinematic experiences that leave a lasting
       impression. Explore our portfolio to discover the beauty, emotion, and
       artistry behind our work.
     </p>
-    <div className="w-[329px] px-4 py-10 gap-2 flex flex-col ">
+    {/* <div className="w-[329px] px-4 py-10 gap-2 flex flex-col ">
       <div className="flex w-full gap-2">
         <img className="w-40" src={gridImg1} alt="" />
         <img className="w-40" src={gridImg1} alt="" />
@@ -55,7 +54,7 @@ function Home() {
         <img className="w-40" src={gridImg1} alt="" />
         <img className="w-40" src={gridImg1} alt="" />
       </div>
-    </div>
+    </div> */}
     <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">
       explore work
     </h6>

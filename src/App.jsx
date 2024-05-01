@@ -5,13 +5,12 @@ import Contact from "./pages/Contact"
 // import Loader from "./pages/LoaderPage"
 
 function App() {
-    
+
   return (
     <>
       <BrowserRouter>
       <Routes>
           <Route index element={<Home />} />
-          {/* <Route path="Home" element={<Home />} /> */}
           <Route path="Films" element={<Films/>} />
           <Route path="Contact" element={<Contact />} />
           {/* <Route path="*" element={<NoPage />} /> */}
