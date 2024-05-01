@@ -4,9 +4,9 @@
 
 @layer base {
   :root {
-    --color-primary: 0 0 0;
+    --color-primary: 18 18 18;
     --color-secondary: 255 255 255;
-    --color-accent: 29 29 29;
+    --color-accent: 28 28 28;
   };
 }
 

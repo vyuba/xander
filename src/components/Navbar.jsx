@@ -11,7 +11,7 @@ function Navbar() {
     <div className="w-full py-5 px-4">
           <nav className="flex justify-between z-10 bg-white px- lg:justify-evenly h-fit items-center w-full pt-1 lg:py-10">
           <Link to="/">
-            <h1 className="logo font-planet text-secondary text-xl">xander</h1>
+            <h1 className="logo font-planet text-secondary text-2xl">xander</h1>
           </Link>
         <ul
           className={`bg-accent lg:bg-white transition-all absolute lg:static top-0 left-0 w-full lg:w-fit z-20 h-screen lg:h-fit flex flex-col items-start py-10 lg:py-0 lg:flex-row capitalize font-patino font-normal text-xl lg:text-base lg:items-center overflow-hidden ${
@@ -22,18 +22,18 @@ function Navbar() {
             <h1 className="logo font-planet py-2 px-5 text-secondary text-2xl">xander</h1>
           </Link>
           <div className="list-container py-3">
-            <p className="uppercase text-base px-4">topic</p>
+            <p className="uppercase text-primary font-bold text-base px-4">topic</p>
             <Link to="/Contact">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent">contact</li>
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl  lg:text-black no-underline bg-transparent">contact</li>
             </Link>
             <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent">
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl lg:text-black no-underline bg-transparent">
               films
             </li>
             </Link>
           </div>
           <div className="list-container py-3">
-            <p className="uppercase text-base px-4">links</p>
+            <p className="uppercase text-primary font-bold text-base px-4">links</p>
             <Link to="/Contact">
             <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent">youtube</li>
             </Link>

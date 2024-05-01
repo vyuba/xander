@@ -24,19 +24,7 @@ function Home() {
   return loading ? (<Loader/>) : (
     <div>
     <Navbar />
-    <div className="relative  my-8">
-      <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div>
-      <div className="w-full h-[396px] grid gap-5 grid-cols-2 place-items-center">
-        <div className="snapImage-item object-cover z-10 bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-      </div>
-    </div>
-    <h6 className="capitalize font-patino pl-4 text-secondary underline text-xl">
-      brands i have worked with
-    </h6>
-    <SlideShow />
+    <h1 className="font-planet text-secondary py-7 uppercase text-6xl text-center">welcome</h1>
     <p className="font-patino text-secondary pl-4 ">
       Welcome to Xander Portfolio! Capturing moments and telling stories
       through the lens is not just a profession; its our passion. With a keen
@@ -45,22 +33,64 @@ function Home() {
       impression. Explore our portfolio to discover the beauty, emotion, and
       artistry behind our work.
     </p>
-    {/* <div className="w-[329px] px-4 py-10 gap-2 flex flex-col ">
-      <div className="flex w-full gap-2">
-        <img className="w-40" src={gridImg1} alt="" />
-        <img className="w-40" src={gridImg1} alt="" />
-      </div>
-      <div className="flex items-center w-full gap-2">
-        <img className="w-40" src={gridImg1} alt="" />
-        <img className="w-40" src={gridImg1} alt="" />
+    {/* <div className="relative  my-8">
+      <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div>
+      <div className="w-full h-[396px] grid gap-5 grid-cols-2 place-items-center">
+        <div className="snapImage-item object-cover z-10 bg-accent w-[155px] h-[200px] rounded"></div>
+        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
+        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
+        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
       </div>
     </div> */}
+
+    <h6 className="capitalize font-patino pt-6 pl-4 text-secondary underline text-xl">
+      brands i have worked with
+    </h6>
+    <SlideShow />
+
+    <div className="px-4 pb-6 pt-3 flex flex-col gap-2 overflow-hidden">
+      <p className="text-lg uppercase text-secondary">best of xander</p>
+      <div className="flex w-full flex-row gap-6 overflow-x-auto">
+        <div className="border-2 border-secondary flex gap-2 flex-col ">
+          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
+          <video
+            className="object-cover w-full h-full"
+            loop
+            muted
+            playsInline
+          >
+            <source src={video2} type="video/MP4" />
+          </video>
+          </div>
+          <div className="pl-2 py-2">
+          <p className="text-xl capitalize text-secondary">Kontroller</p>
+          <p className="text capitalize text-secondary">best of xander</p>
+          </div>
+        </div>
+        <div className="border-2 border-secondary flex gap-2 flex-col">
+          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
+          <video
+            className="object-cover w-full h-full"
+            loop
+            muted
+            playsInline
+          >
+            <source src={video2} type="video/MP4" />
+          </video>
+          </div>
+          <div className="pl-2 py-2">
+          <p className="text-xl capitalize text-secondary">Kontroller</p>
+          <p className="text capitalize text-secondary">best of xander</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">
       explore work
     </h6>
-    <div className="slider-wrapper overflow-hidden h-[350px] w-full px-4 pt-4">
-      <div className="image-list grid place-items-center h-[300px]  w-full gap-1">
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
+    <div className="slider-wrapper overflow-hidden h-[450px] w-full px-4 pt-4">
+      <div className="image-list grid place-items-center h-[350px]  w-full gap-1">
+        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
           <video
           // ref={videoRef}
             className="object-cover w-full h-full"
@@ -71,7 +101,7 @@ function Home() {
             <source src={video1} type="video/MP4" />
           </video>
         </div>
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
+        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
           <video
             className="object-cover w-full h-full"
             loop
@@ -86,7 +116,7 @@ function Home() {
               <source src={video3} type="video/MP4" />
             </video>
           </div>   */}
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
+        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
           <video
             className="object-cover w-full h-full"
             loop
