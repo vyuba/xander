@@ -1,8 +1,10 @@
-import React from 'react'
+// import React from 'react'
+
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 function LoaderPage() {
+
     const icon = {
         hidden: {
           opacity: 0,
@@ -33,10 +35,6 @@ function LoaderPage() {
         }}
       />
     </motion.svg>
-     <Link to="/Home" >
-     <button type="submit" className='text-secondary'> enter to coninue</button>
-     </Link>
-     
   </div>
   )
 }
