@@ -14,7 +14,7 @@ function Films() {
   return (
     <div className="flex flex-col md:flex-row">
       <Navbar />
-      <div className=" w-full h-screen md:pl-[255px] flex flex-col justify-between">
+      <div className=" w-full h-screen md:pl-[255px] flex flex-col md:pt-10 justify-between">
         <div className="px-4 grid gap-4 grid-cols-1 md:grid-cols-2">
           <div>
             <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>

@@ -17,15 +17,15 @@ function Navbar() {
           className={`border-2 md:flex w-full flex-col justify-between md:justify-between fixed top-0 md:left-0 transition-all  z-50 md:z-0  md:w-64 h-screen bg-primary border-accent ${!menuIsOpen ? 'left-[-100%]' : 'left-0'}`}
         >
           <Link to="/">
-            <h1 className="logo font-planet py-2 pt-8 px-5 text-secondary text-2xl">xander</h1>
+            <h1 className="logo font-planet py-2 pt-8 px-5 text-accent text-2xl md:text-3xl ">xander</h1>
           </Link>
           <div className="list-container py-3">
             <p className="uppercase text-accent font-bold text-base px-4">topic</p>
             <Link to="/Contact">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl md:text-2xl lg:text-3xl  lg:text-black no-underline bg-transparent font-patino capitalize">contact</li>
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl  lg:text-black no-underline bg-transparent font-patino capitalize">contact</li>
             </Link>
             <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl font-patino capitalize lg:text-black no-underline md:text-2xl lg:text-3xl bg-transparent">
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl font-patino capitalize lg:text-black no-underline  bg-transparent">
               films
             </li>
             </Link>
@@ -33,15 +33,15 @@ function Navbar() {
           <div className="list-container py-3">
             <p className="uppercase text-accent font-bold text-base px-4">links</p>
             <Link to="/Contact">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent font-patino capitalize md:text-2xl lg:text-3xl">youtube</li>
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent font-patino capitalize  text-xl">youtube</li>
             </Link>
             <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize md:text-2xl lg:text-3xl">
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize  text-xl">
               podcast
             </li>
             </Link>
             <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize md:text-2xl lg:text-3xl">
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize  text-xl">
               1%everyday shop
             </li>
             </Link>
@@ -49,10 +49,10 @@ function Navbar() {
           <div className="list-container py-3">
             <p className="uppercase text-accent font-bold text-base px-4">links</p>
             <Link to="/Contact">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent font-patino capitalize md:text-2xl lg:text-3xl">youtube</li>
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary  lg:text-black no-underline bg-transparent font-patino capitalize text-xl">youtube</li>
             </Link>
             <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize md:text-2xl lg:text-3xl">
+            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary lg:text-black no-underline bg-transparent font-patino capitalize text-xl">
               1%everyday shop
             </li>
             </Link>

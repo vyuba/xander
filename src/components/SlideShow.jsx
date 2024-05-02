@@ -10,7 +10,7 @@ import zttw from "../assets/images/zttw logo.png"
 
 function SlideShow() {
   return (
-    <div className="SlideShow my-3 overflow-hidden bg-accent py-3">
+    <div className="SlideShow my-3 overflow-hidden bg-accent py-1">
         <div className="logoContainer animate-slide flex gap-3">
           <img className="brandLogo" src={strtSok} alt="" />
           <img className="brandLogo" src={every} alt="" />

@@ -29,7 +29,7 @@ li{
 }
 
 .brandLogo{
-  height: 70px;
+  height: 60px;
 }
 
 .image-list{
@@ -102,21 +102,34 @@ li{
   stroke-linecap: round;
 }
 
+/* .snapImage-container{
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+} */
 
-
-
+.snapImage-item{
+  width: 170px;
+  height: 250px;
+  border: white 2px solid;
+}
 .snapImage-item:nth-child(1){
-  transform: rotate(-7.44deg);
+  /* transform: rotate(-7.44deg); */
+  transform: translateX(20px);
 }
 .snapImage-item:nth-child(2){
-  transform: rotate(9.48deg);
+  /* transform: rotate(9.48deg); */
+  transform: translateY(50px) translateX(-7px);
+  /* transform: translateX(-30px); */
 }
 .snapImage-item:nth-child(3){
-  transform: rotate(-7.44deg);
+  /* transform: rotate(-7.44deg); */
+  transform: translateY(-70px) translateX(20px);
 
 }
 .snapImage-item:nth-child(4){
-  transform: rotate(9.48deg);
+  /* transform: rotate(9.48deg); */
+  transform: translateY(-20px) translateX(-7px);
 }
 
 .imageCenter{
@@ -137,11 +150,11 @@ button {
 
 
 /* <style for menu__icon> ======== */
-.background{
+/* .background{
   border: #fff 1px solid;
   border-radius: 5px;
   padding: 2px 3px;
-}
+} */
 .menu__icon {
   width: 32px;
   height: 32px;

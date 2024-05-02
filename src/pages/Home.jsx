@@ -8,7 +8,10 @@ import poster1 from "../assets/images/vlcsnap-2024-05-02-11h09m07s827.png";
 import poster2 from "../assets/images/vlcsnap-2024-05-02-11h10m28s442.png";
 import poster3 from "../assets/images/vlcsnap-2024-05-02-11h11m29s671.png";
 // import video3 from "../assets/images/IMG_7508.MP4"
-// import gridImg1 from "../assets/images/IMG_7483.JPG";
+import gridImg1 from "../assets/images/IMG_7483.JPG";
+import gridImg2 from "../assets/images/IMG_7475.JPG";
+import gridImg3 from "../assets/images/IMG_7487.JPG";
+import gridImg4 from "../assets/images/IMG_7494.JPG";
 import Loader from "./LoaderPage";
 
 function Home() {
@@ -28,7 +31,24 @@ function Home() {
     <div className="flex md:flex-row flex-col justify-between">
     <Navbar />
     <div className="w-full md:pl-[255px]">
-    <h1 className="font-planet text-secondary py-7 uppercase text-6xl text-center">welcome</h1>
+    {/* <h1 className="font-planet text-secondary py-7 uppercase text-6xl text-center">welcome</h1> */}
+    <div className="relative snapImage-container">
+      {/* <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div> */}
+      <div className="w-full h-[650px] grid gap-5 grid-cols-2 place-items-center">
+        <div className="snapImage-item object-cover z-10 bg-accent rounded">
+          <img className="object-cover w-full h-full" src={gridImg1} alt="" />
+        </div>
+        <div className="snapImage-item bg-accent rounded">
+          <img className="object-cover w-full h-full" src={gridImg2} alt="" />
+        </div>
+        <div className="snapImage-item bg-accent rounded">
+          <img className="object-cover w-full h-full" src={gridImg3} alt="" />
+        </div>
+        <div className="snapImage-item bg-accent rounded">
+          <img className="object-cover w-full h-full" src={gridImg4} alt="" />
+        </div>
+      </div>
+    </div>
     <p className="font-patino text-secondary pl-4 ">
       Welcome to Xander Portfolio! Capturing moments and telling stories
       through the lens is not just a profession; its our passion. With a keen
@@ -37,15 +57,6 @@ function Home() {
       impression. Explore our portfolio to discover the beauty, emotion, and
       artistry behind our work.
     </p>
-    {/* <div className="relative  my-8">
-      <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div>
-      <div className="w-full h-[396px] grid gap-5 grid-cols-2 place-items-center">
-        <div className="snapImage-item object-cover z-10 bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-        <div className="snapImage-item bg-accent w-[155px] h-[200px] rounded"></div>
-      </div>
-    </div> */}
 
     <h6 className="capitalize font-patino pt-6 pl-4 text-secondary underline text-xl">
       brands i have worked with
