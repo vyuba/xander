@@ -1,6 +1,5 @@
 // import React from 'react'
 
-
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
@@ -13,60 +12,61 @@ function Films() {
     height: "100%",
   };
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
       <Navbar />
-      <div className="px-4 grid gap-4 grid-cols-1 md:grid-cols-2">
-        <div>
-          <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
-            <iframe
-              src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={styles}
-              title="COLORGRADED R1"
-            ></iframe>
+      <div className=" w-full md:pl-[255px] flex flex-col gap-20">
+        <div className="px-4 grid gap-4 grid-cols-1 md:grid-cols-2">
+          <div>
+            <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={styles}
+                title="COLORGRADED R1"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <div className="text-secondary">
+              <p>KONTROLLER VIDEO</p>
+              <p>BY ASAKE</p>
+            </div>
           </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <div className="text-secondary">
-            <p>KONTROLLER VIDEO</p>
-            <p>BY ASAKE</p>
+          <div>
+            <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={styles}
+                title="COLORGRADED R1"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <div className="text-secondary">
+              <p>KONTROLLER VIDEO</p>
+              <p>BY ASAKE</p>
+            </div>
+          </div>
+          <div>
+            <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={styles}
+                title="COLORGRADED R1"
+              ></iframe>
+            </div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <div className="text-secondary">
+              <p>KONTROLLER VIDEO</p>
+              <p>BY ASAKE</p>
+            </div>
           </div>
         </div>
-        <div>
-          <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
-            <iframe
-              src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={styles}
-              title="COLORGRADED R1"
-            ></iframe>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <div className="text-secondary">
-            <p>KONTROLLER VIDEO</p>
-            <p>BY ASAKE</p>
-          </div>
-        </div>
-        <div>
-          <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
-            <iframe
-              src="https://player.vimeo.com/video/898290756?badge=0;autopause=0;player_id=0;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture"
-              style={styles}
-              title="COLORGRADED R1"
-            ></iframe>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-          <div className="text-secondary">
-            <p>KONTROLLER VIDEO</p>
-            <p>BY ASAKE</p>
-          </div>
-        </div>
-        
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 }

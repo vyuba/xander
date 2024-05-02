@@ -137,10 +137,16 @@ button {
 
 
 /* <style for menu__icon> ======== */
+.background{
+  border: #fff 1px solid;
+  border-radius: 5px;
+  padding: 2px 3px;
+}
 .menu__icon {
   width: 32px;
   height: 32px;
-  padding: 4px;
+  padding: 1px;
+
 }
 
 .menu__icon span {
@@ -285,3 +291,14 @@ button {
 }
 
 
+::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  background-color:rgb(28, 28, 28);
+}
+::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}

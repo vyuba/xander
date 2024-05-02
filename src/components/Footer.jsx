@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="bg-secondary w-full h-[350px] mt-8 flex items-center flex-col justify-between">
+    <div className="bg-secondary w-full h-[230px] mt-8 flex items-center flex-col justify-between">
         <div className="text-center pt-10 grid gap-1">
             <h1 className="logo font-planet text-primary text-xl">xander</h1>
             <Link to="/Films"><h6 className="capitalize font-patino text-primary underline text-lg">explore worlk</h6></Link>

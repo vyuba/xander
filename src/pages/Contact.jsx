@@ -5,8 +5,9 @@ import Navbar from "../components/Navbar"
 
 function Contact() {
   return (
-    <div>
+    <div className="flex flex-col md:flex-row">
         <Navbar/>
+        <div>
         <div className="container-about px-4 text-center leading-relaxed text-secondary">
             <p className="aboutme">
             1percnt is a Video Production company based in Lagos, Nigeria. 
@@ -47,6 +48,8 @@ function Contact() {
             </button>
         </form>
         <Footer/>
+        </div>
+
     </div>
   )
 }

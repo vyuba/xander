@@ -4,6 +4,9 @@ import Navbar from "../components/Navbar";
 import SlideShow from "../components/SlideShow";
 import video1 from "../assets/images/IMG_7509.MP4";
 import video2 from "../assets/images/IMG_7510.MP4";
+import poster1 from "../assets/images/vlcsnap-2024-05-02-11h09m07s827.png";
+import poster2 from "../assets/images/vlcsnap-2024-05-02-11h10m28s442.png";
+import poster3 from "../assets/images/vlcsnap-2024-05-02-11h11m29s671.png";
 // import video3 from "../assets/images/IMG_7508.MP4"
 // import gridImg1 from "../assets/images/IMG_7483.JPG";
 import Loader from "./LoaderPage";
@@ -22,8 +25,9 @@ function Home() {
     timeout()
   }, []);
   return loading ? (<Loader/>) : (
-    <div>
+    <div className="flex md:flex-row flex-col justify-between">
     <Navbar />
+    <div className="w-full md:pl-[255px]">
     <h1 className="font-planet text-secondary py-7 uppercase text-6xl text-center">welcome</h1>
     <p className="font-patino text-secondary pl-4 ">
       Welcome to Xander Portfolio! Capturing moments and telling stories
@@ -48,9 +52,9 @@ function Home() {
     </h6>
     <SlideShow />
 
-    <div className="px-4 pb-6 pt-3 flex flex-col gap-2 overflow-hidden">
+    <div className="px-4 pb-11 pt-10 flex flex-col gap-2 overflow-hidden">
       <p className="text-lg uppercase text-secondary">best of xander</p>
-      <div className="flex w-full flex-row gap-6 overflow-x-auto">
+      <div className="flex w-full flex-row gap-6 pb-5 overflow-x-auto">
         <div className="border-2 border-secondary flex gap-2 flex-col ">
           <div className="w-[270px] h-[300px] border-b-2 border-secondary">
           <video
@@ -58,6 +62,7 @@ function Home() {
             loop
             muted
             playsInline
+            poster={poster1}
           >
             <source src={video2} type="video/MP4" />
           </video>
@@ -74,6 +79,58 @@ function Home() {
             loop
             muted
             playsInline
+            poster={poster2}
+          >
+            <source src={video2} type="video/MP4" />
+          </video>
+          </div>
+          <div className="pl-2 py-2">
+          <p className="text-xl capitalize text-secondary">Kontroller</p>
+          <p className="text capitalize text-secondary">best of xander</p>
+          </div>
+        </div>
+        <div className="border-2 border-secondary flex gap-2 flex-col">
+          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
+          <video
+            className="object-cover w-full h-full"
+            loop
+            muted
+            playsInline
+            poster={poster2}
+          >
+            <source src={video2} type="video/MP4" />
+          </video>
+          </div>
+          <div className="pl-2 py-2">
+          <p className="text-xl capitalize text-secondary">Kontroller</p>
+          <p className="text capitalize text-secondary">best of xander</p>
+          </div>
+        </div>
+        <div className="border-2 border-secondary flex gap-2 flex-col">
+          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
+          <video
+            className="object-cover w-full h-full"
+            loop
+            muted
+            playsInline
+            poster={poster2}
+          >
+            <source src={video2} type="video/MP4" />
+          </video>
+          </div>
+          <div className="pl-2 py-2">
+          <p className="text-xl capitalize text-secondary">Kontroller</p>
+          <p className="text capitalize text-secondary">best of xander</p>
+          </div>
+        </div>
+        <div className="border-2 border-secondary flex gap-2 flex-col">
+          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
+          <video
+            className="object-cover w-full h-full"
+            loop
+            muted
+            playsInline
+            poster={poster2}
           >
             <source src={video2} type="video/MP4" />
           </video>
@@ -97,6 +154,7 @@ function Home() {
             loop
             muted
             playsInline
+            poster={poster1}
           >
             <source src={video1} type="video/MP4" />
           </video>
@@ -107,6 +165,7 @@ function Home() {
             loop
             muted
             playsInline
+            poster={poster2}
           >
             <source src={video2} type="video/MP4" />
           </video>
@@ -122,14 +181,16 @@ function Home() {
             loop
             muted
             playsInline
+            poster={poster3}
           >
             <source src={video1} type="video/MP4" />
           </video>
         </div>
       </div>
-      <div className="scrollProgressBar relative w-full h-1 bg-secondary before:block before:h-1 before:w-1/3 before:bg-accent before:absolute top-[1px]"></div>
     </div>
     <Footer />
+    </div>
+   
   </div>);
 
 }
