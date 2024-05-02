@@ -17,7 +17,7 @@ export default {
     },
     extend: {
       animation: {
-        slide: 'slide 5s infinite linear',
+        scroll: 'scroll 5s infinite linear',
       },
     },
   },

@@ -13,9 +13,22 @@ import gridImg2 from "../assets/images/IMG_7475.JPG";
 import gridImg3 from "../assets/images/IMG_7487.JPG";
 import gridImg4 from "../assets/images/IMG_7494.JPG";
 import Loader from "./LoaderPage";
+import VideoCard from "../components/VideoCard";
+import { videoData } from "../data/data"
 
 function Home() {
   const [loading, setLoading] = useState(true);
+  const videocard = videoData.map((data)=>{
+    return(
+      <VideoCard
+        key ={data.id}
+        video={data.video}
+        image={data.image}
+        Artist={data.artist}
+        musicName={data.musicName}   
+      />
+    )
+  })
   useEffect(() => {
     // Simulate loading time (you can replace this with actual data fetching)
     const timeout = () =>{
@@ -27,6 +40,7 @@ function Home() {
     // Clean up the timeout when the component unmounts
     timeout()
   }, []);
+
   return loading ? (<Loader/>) : (
     <div className="flex md:flex-row flex-col justify-between">
     <Navbar />
@@ -66,7 +80,7 @@ function Home() {
     <div className="px-4 pb-11 pt-10 flex flex-col gap-2 overflow-hidden">
       <p className="text-lg uppercase text-secondary">best of xander</p>
       <div className="flex w-full flex-row gap-6 pb-5 overflow-x-auto">
-        <div className="border-2 border-secondary flex gap-2 flex-col ">
+        {/* <div className="border-2 border-secondary flex gap-2 flex-col ">
           <div className="w-[270px] h-[300px] border-b-2 border-secondary">
           <video
             className="object-cover w-full h-full"
@@ -82,75 +96,8 @@ function Home() {
           <p className="text-xl capitalize text-secondary">Kontroller</p>
           <p className="text capitalize text-secondary">best of xander</p>
           </div>
-        </div>
-        <div className="border-2 border-secondary flex gap-2 flex-col">
-          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
-            poster={poster2}
-          >
-            <source src={video2} type="video/MP4" />
-          </video>
-          </div>
-          <div className="pl-2 py-2">
-          <p className="text-xl capitalize text-secondary">Kontroller</p>
-          <p className="text capitalize text-secondary">best of xander</p>
-          </div>
-        </div>
-        <div className="border-2 border-secondary flex gap-2 flex-col">
-          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
-            poster={poster2}
-          >
-            <source src={video2} type="video/MP4" />
-          </video>
-          </div>
-          <div className="pl-2 py-2">
-          <p className="text-xl capitalize text-secondary">Kontroller</p>
-          <p className="text capitalize text-secondary">best of xander</p>
-          </div>
-        </div>
-        <div className="border-2 border-secondary flex gap-2 flex-col">
-          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
-            poster={poster2}
-          >
-            <source src={video2} type="video/MP4" />
-          </video>
-          </div>
-          <div className="pl-2 py-2">
-          <p className="text-xl capitalize text-secondary">Kontroller</p>
-          <p className="text capitalize text-secondary">best of xander</p>
-          </div>
-        </div>
-        <div className="border-2 border-secondary flex gap-2 flex-col">
-          <div className="w-[270px] h-[300px] border-b-2 border-secondary">
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
-            poster={poster2}
-          >
-            <source src={video2} type="video/MP4" />
-          </video>
-          </div>
-          <div className="pl-2 py-2">
-          <p className="text-xl capitalize text-secondary">Kontroller</p>
-          <p className="text capitalize text-secondary">best of xander</p>
-          </div>
-        </div>
+        </div> */}
+        {videocard}
       </div>
     </div>
     <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">
