@@ -30,15 +30,16 @@ function Home() {
     )
   })
   useEffect(() => {
+    setLoading(true)
     // Simulate loading time (you can replace this with actual data fetching)
-    const timeout = () =>{
+    // const timeout = () =>{
       setTimeout(() => {
         setLoading(false);
       }, 8000);
-    } 
+    // } 
 
     // Clean up the timeout when the component unmounts
-    timeout()
+    // timeout()
   }, []);
 
   return loading ? (<Loader/>) : (

@@ -1,11 +1,11 @@
 // import React from 'react'
-// import strtSok from "../assets/images/steetsouk logo.png"
+import thirsty from "../assets/images/logo.webp"
 // import every from "../assets/images/everynoun logo.png"
 // import j8Agency from "../assets/images/j8Agency logo.png"
-// import african from "../assets/images/african proverb logo.png"
+import african from "../assets/images/fullsizeoutput_46f.webp"
 // import kript from "../assets/images/kript logo.png"
-// import rager from "../assets/images/rager logo.png"
-// import thirsty from "../assets/images/thirsty logo.png"
+import rager from "../assets/images/4_1_baceae0b-8ee1-4a3a-9ef3-130a223e8dfa_100x.avif"
+import strtSok from "../assets/images/652ebc4b01944cd609be6963_webclip.png"
 // import zttw from "../assets/images/zttw logo.png"
 
 function SlideShow() {
@@ -15,87 +15,57 @@ function SlideShow() {
 <div className="stock-ticker">
   <ul>
     <li className="minus">
-      <span className="company">AAPL</span>
+      <img className="h-[4rem]" src={strtSok} alt="" />
+      {/* <span className="company">AAPL</span>
       <span className="price">181.16</span>
-      <span className="change">-1.36 (-0.75%)</span>
+      <span className="change">-1.36 (-0.75%)</span> */}
     </li>
     <li className="plus">
-      <span className="company">TSLA</span>
-      <span className="price">199.40</span>
-      <span className="change">+7.43 (+3.87%)</span>
+      <img className="h-6" src={thirsty} alt="" />
     </li>
     <li className="plus">
-      <span className="company">NFLX</span>
-      <span className="price">587.65</span>
-      <span className="change">+4.09 (+0.70%)</span>
+      <img className="h-[2rem]" src={african} alt="" />
     </li>
     <li className="minus">
-      <span className="company">GOOG</span>
-      <span className="price">138.75</span>
-      <span className="change">-6.54 (-4.50%)</span>
+      <img className="h-5" src={rager} alt="" />
     </li>
     <li className="plus">
-      <span className="company">NVDA</span>
-      <span className="price">790.92</span>
-      <span className="change">+2.75 (+0.35%)</span>
+      <img className="h-[4rem]" src={strtSok} alt="" />
     </li>
     <li className="minus">
-      <span className="company">MSFT</span>
-      <span className="price">407.54</span>
-      <span className="change">-2.80 (-0.68%)</span>
+    <img className="h-6" src={thirsty} alt="" />
     </li>
     <li className="plus">
-      <span className="company">META</span>
-      <span className="price">487.05</span>
-      <span className="change">+5.31 (+1.10%)</span>
+    <img className="h-[4rem]" src={strtSok} alt="" />
     </li>
     <li className="minus">
-      <span className="company">KO</span>
-      <span className="price">60.34</span>
-      <span className="change">-0.37 (-0.61%)</span>
+      <img className="h-6" src={thirsty} alt="" />
     </li>
   </ul>
 
   <ul aria-hidden="true">
     <li className="minus">
-      <span className="company">AAPL</span>
-      <span className="price">181.16</span>
-      <span className="change">-1.36 (-0.75%)</span>
+      <img className="h-[4rem]" src={strtSok} alt="" />
     </li>
     <li className="plus">
-      <span className="company">TSLA</span>
-      <span className="price">199.40</span>
-      <span className="change">+7.43 (+3.87%)</span>
+    <img className="h-6" src={thirsty} alt="" />
     </li>
     <li className="plus">
-      <span className="company">NFLX</span>
-      <span className="price">587.65</span>
-      <span className="change">+4.09 (+0.70%)</span>
+    <img className="h-[2rem]" src={african} alt="" />
     </li>
     <li className="minus">
-      <span className="company">GOOG</span>
-      <span className="price">138.75</span>
-      <span className="change">-6.54 (-4.50%)</span>
+    <img className="h-5" src={rager} alt="" />
     </li>
     <li className="plus">
-      <span className="company">NVDA</span>
-      <span className="price">790.92</span>
-      <span className="change">+2.75 (+0.35%)</span>
+    <img className="h-[4rem]" src={strtSok} alt="" />
     </li>
     <li className="minus">
-      <span className="company">MSFT</span>
-      <span className="price">407.54</span>
-      <span className="change">-2.80 (-0.68%)</span>
+      <img className="h-6" src={thirsty} alt="" />
     </li>
     <li className="plus">
-      <span className="company">META</span>
-      <span className="price">487.05</span>
-      <span className="change">+5.31 (+1.10%)</span>
+      <img className="h-[4rem]" src={strtSok} alt="" />
     </li>
-    <li className="minus">
-      <span className="company">KO</span>
-      <span className="price">60.34</span>
-      <span className="change">-0.37 (-0.61%)</span>
+    <li className="minus"><img className="h-6" src={thirsty} alt="" />
     </li>
   </ul>
 </div>
