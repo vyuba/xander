@@ -125,7 +125,7 @@ function Navbar() {
           </a>
         </div>
         </ul>
-        <div className="background z-[100] md:hidden" onClick={toggleMenu}>
+        <div className="background fixed bg-primary right-5 top-4 z-[100] md:hidden" onClick={toggleMenu}>
           <button className="menu__icon">
             <span className={`w-full h-[2px] rounded-2xl border-black bg-black block transition-all ${
               !menuIsOpen
