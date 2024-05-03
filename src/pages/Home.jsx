@@ -15,6 +15,7 @@ import gridImg4 from "../assets/images/IMG_7494.JPG";
 import Loader from "./LoaderPage";
 import VideoCard from "../components/VideoCard";
 import { videoData } from "../data/data"
+import AutoPlayCard from "../components/AutoPlayVideoCard";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -106,45 +107,35 @@ function Home() {
     </h6>
     <div className="slider-wrapper overflow-hidden h-[450px] w-full px-4 pt-4">
       <div className="image-list grid place-items-center h-[350px]  w-full gap-1">
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
-          <video
-          // ref={videoRef}
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
+        <div className="image-item">
+        <AutoPlayCard
+            // key ={data.id}
+            video={video1}
             poster={poster1}
-          >
-            <source src={video1} type="video/MP4" />
-          </video>
+        />         
         </div>
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
+        <div className="image-item">
+        <AutoPlayCard
+            // key ={data.id}
+            video={video2}
             poster={poster2}
-          >
-            <source src={video2} type="video/MP4" />
-          </video>
+        />
         </div>
+        <div className="image-item">
+        <AutoPlayCard
+            // key ={data.id}
+            video={video2}
+            poster={poster3}
+        />
+        </div>
+
+
+
         {/* <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded">
             <video className="object-cover w-full h-full" loop muted playsInline>
               <source src={video3} type="video/MP4" />
             </video>
           </div>   */}
-        <div className="image-item z-10 flex justify-center items-center bg-accent w-[200px] h-[300px] rounded border-4 border-secondary" onMouseEnter={(e)=> e.target.play()} onMouseLeave={(e)=> e.target.pause()}>
-          <video
-            className="object-cover w-full h-full"
-            loop
-            muted
-            playsInline
-            poster={poster3}
-          >
-            <source src={video1} type="video/MP4" />
-          </video>
-        </div>
       </div>
     </div>
     <Footer />
