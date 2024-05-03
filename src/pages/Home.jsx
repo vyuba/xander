@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import SlideShow from "../components/SlideShow";
@@ -12,13 +12,13 @@ import gridImg1 from "../assets/images/IMG_7483.JPG";
 import gridImg2 from "../assets/images/IMG_7475.JPG";
 import gridImg3 from "../assets/images/IMG_7487.JPG";
 import gridImg4 from "../assets/images/IMG_7494.JPG";
-import Loader from "./LoaderPage";
+// import Loader from "./LoaderPage";
 import VideoCard from "../components/VideoCard";
 import { videoData } from "../data/data"
 import AutoPlayCard from "../components/AutoPlayVideoCard";
 
 function Home() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
   const videocard = videoData.map((data)=>{
     return(
       <VideoCard
@@ -30,20 +30,20 @@ function Home() {
       />
     )
   })
-  useEffect(() => {
-    setLoading(true)
-    // Simulate loading time (you can replace this with actual data fetching)
-    // const timeout = () =>{
-      setTimeout(() => {
-        setLoading(false);
-      }, 8000);
-    // } 
+  // useEffect(() => {
+  //   setLoading(true)
+  //   // Simulate loading time (you can replace this with actual data fetching)
+  //   // const timeout = () =>{
+  //     setTimeout(() => {
+  //       setLoading(false);
+  //     }, 8000);
+  //   // } 
 
-    // Clean up the timeout when the component unmounts
-    // timeout()
-  }, []);
+  //   // Clean up the timeout when the component unmounts
+  //   // timeout()
+  // }, []);
 
-  return loading ? (<Loader/>) : (
+  return (
     <div className="flex md:flex-row flex-col justify-between">
     <Navbar />
     <div className="w-full md:pl-[255px]">
@@ -141,8 +141,8 @@ function Home() {
     <Footer />
     </div>
    
-  </div>);
-
+  </div>
+  )
 }
 
 export default Home;
