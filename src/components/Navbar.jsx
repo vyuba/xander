@@ -30,6 +30,19 @@ function Navbar() {
               topic
             </p>
             <div className=" flex justify-evenly items-center">
+              <Link to="/Home">
+                <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl  lg:text-black no-underline bg-transparent font-patino capitalize">
+                  Home
+                </li>
+              </Link>{" "}
+              <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
+                <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>
+                <span className="text-lg font-bold font-patino text-accent">
+                  01
+                </span>
+              </span>
+            </div>
+            <div className=" flex justify-evenly items-center">
               <Link to="/Contact">
                 <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl  lg:text-black no-underline bg-transparent font-patino capitalize">
                   contact
@@ -38,7 +51,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  01
+                  02
                 </span>
               </span>
             </div>
@@ -51,15 +64,10 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  02
+                  03
                 </span>
               </span>
             </div>
-            {/* <Link to="/Films">
-            <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl font-patino capitalize lg:text-black no-underline  bg-transparent">
-              films
-            </li>
-            </Link> */}
           </div>
           <div className="list-container py-3">
             <p className="uppercase text-accent font-bold text-base px-4">
@@ -74,7 +82,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  03
+                  04
                 </span>
               </span>
             </div>
@@ -87,7 +95,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>
                 <span className="text-lg font-bold font-patino text-accent">
-                  04
+                  05
                 </span>
               </span>
             </div>
@@ -100,7 +108,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  05
+                  06
                 </span>
               </span>
             </div>
@@ -118,7 +126,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  06
+                  07
                 </span>
               </span>
             </div>
@@ -131,7 +139,7 @@ function Navbar() {
               <span className=" w-full pr-5 flex items-center justify-evenly gap-2">
                 <span className=" bg-accent w-full h-[2px] rounded-sm block "></span>{" "}
                 <span className="text-lg font-bold font-patino text-accent">
-                  07
+                  08
                 </span>
               </span>
             </div>
