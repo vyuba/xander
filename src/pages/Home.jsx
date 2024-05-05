@@ -14,42 +14,59 @@ import SlideShow from "../components/SlideShow";
 // import gridImg4 from "../assets/images/IMG_7494.JPG";
 // import Loader from "./LoaderPage";
 import VideoCard from "../components/VideoCard";
-import { videoData } from "../data/data"
+import { videoData } from "../data/data";
 import AutoPlayCard from "../components/AutoPlayVideoCard";
 
 function Home() {
   // const [loading, setLoading] = useState(true);
-  const videocard = videoData.map((data)=>{
-    return(
+  const videocard = videoData.map((data) => {
+    return (
       <VideoCard
-        key ={data.id}
+        key={data.id}
         video={data.video}
         image={data.image}
         Artist={data.artist}
-        musicName={data.musicName}   
+        musicName={data.musicName}
       />
-    )
-  })
-  // useEffect(() => {
-  //   setLoading(true)
-  //   // Simulate loading time (you can replace this with actual data fetching)
-  //   // const timeout = () =>{
-  //     setTimeout(() => {
-  //       setLoading(false);
-  //     }, 8000);
-  //   // } 
-
-  //   // Clean up the timeout when the component unmounts
-  //   // timeout()
-  // }, []);
+    );
+  });
+  const styles = {
+    position: "absolute",
+    top: "0",
+    left: "0",
+    width: "100%",
+    height: "100%",
+  };
 
   return (
     <div className="flex md:flex-row flex-col justify-between">
-    <Navbar />
-    <div className="w-full md:pl-[255px]">
-    {/* <h1 className="font-planet text-secondary py-7 uppercase text-6xl text-center">welcome</h1> */}
-    <div className="relative snapImage-container">
-      {/* <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div> */}
+      <Navbar />
+      <div className="w-full md:pl-[255px]">
+        <div className="w-full">
+          <h1 className="text-7xl text-center py-5 md:text-8xl md:pt-10 lg:text-[120px] font-planet text-accent">
+            xander
+          </h1>
+          <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>
+              <iframe
+                src="https://player.vimeo.com/video/898290756?badge=0&amp;autopause=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                style={styles}
+                title="COLORGRADED R1"
+              ></iframe>
+            </div>
+          {/* <div style={{padding: "52.73% 0 0 0", position: "relative",width:"100%" }}>
+            <iframe
+              src="https://player.vimeo.com/video/910358739?badge=0&amp;autopause=0&amp;autoplay=1&amp;player_id=0&amp;app_id=58479"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              style={styles}
+              title="BU$T DOWN (BTS)"
+            ></iframe>
+          </div> */}
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        {/* <div className="relative snapImage-container">
       <div className="w-full h-[650px] grid gap-5 grid-cols-2 place-items-center">
         <div className="snapImage-item object-cover z-10 bg-accent rounded">
           <img className="object-cover w-full h-full" src="/images/IMG_7483.JPG" alt="" />
@@ -64,25 +81,25 @@ function Home() {
           <img className="object-cover w-full h-full" src="/images/IMG_7494.JPG" alt="" />
         </div>
       </div>
-    </div>
-    <p className="font-patino text-secondary pl-4 ">
-      Welcome to Xander Portfolio! Capturing moments and telling stories
-      through the lens is not just a profession; its our passion. With a keen
-      eye for detail and a dedication to creativity, we strive to produce
-      captivating imagery and cinematic experiences that leave a lasting
-      impression. Explore our portfolio to discover the beauty, emotion, and
-      artistry behind our work.
-    </p>
+    </div> */}
+        <p className="font-patino text-secondary pl-4 pt-5 ">
+          Welcome to Xander Portfolio! Capturing moments and telling stories
+          through the lens is not just a profession; its our passion. With a
+          keen eye for detail and a dedication to creativity, we strive to
+          produce captivating imagery and cinematic experiences that leave a
+          lasting impression. Explore our portfolio to discover the beauty,
+          emotion, and artistry behind our work.
+        </p>
 
-    <h6 className="capitalize font-patino pt-6 pl-4 text-secondary underline text-xl">
-      brands i have worked with
-    </h6>
-    <SlideShow />
+        <h6 className="capitalize font-patino pt-6 pl-4 text-secondary underline text-xl">
+          brands i have worked with
+        </h6>
+        <SlideShow />
 
-    <div className="px-4 pb-11 pt-10 flex flex-col gap-2 overflow-hidden">
-      <p className="text-lg uppercase text-secondary">best of xander</p>
-      <div className="flex w-full flex-row gap-6 pb-5 overflow-x-auto">
-        {/* <div className="border-2 border-secondary flex gap-2 flex-col ">
+        <div className="px-4 pb-11 pt-10 flex flex-col gap-2 overflow-hidden">
+          <p className="text-lg uppercase text-secondary">best of xander</p>
+          <div className="flex w-full flex-row gap-6 pb-5 overflow-x-auto">
+            {/* <div className="border-2 border-secondary flex gap-2 flex-col ">
           <div className="w-[270px] h-[300px] border-b-2 border-secondary">
           <video
             className="object-cover w-full h-full"
@@ -99,50 +116,47 @@ function Home() {
           <p className="text capitalize text-secondary">best of xander</p>
           </div>
         </div> */}
-        {videocard}
-      </div>
-    </div>
-    <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">
-      explore work
-    </h6>
-    <div className="slider-wrapper overflow-hidden h-[450px] w-full px-4 pt-4">
-      <div className="image-list grid place-items-center h-[350px]  w-full gap-1">
-        <div className="image-item">
-        <AutoPlayCard
-            // key ={data.id}
-            video="/images/IMG_7509.MP4"
-            poster="/images/vlcsnap-2024-05-02-11h09m07s827.png"
-        />         
+            {videocard}
+          </div>
         </div>
-        <div className="image-item">
-        <AutoPlayCard
-            // key ={data.id}
-            video="/images/IMG_7510.MP4"
-            poster="/images/vlcsnap-2024-05-02-11h10m28s442.png"
-        />
-        </div>
-        <div className="image-item">
-        <AutoPlayCard
-            // key ={data.id}
-            video="/images/IMG_7510.MP4"
-            poster="/images/vlcsnap-2024-05-02-11h11m29s671.png"
-        />
-        </div>
+        <h6 className="pl-4 capitalize font-patino text-secondary underline text-xl">
+          explore work
+        </h6>
+        <div className="slider-wrapper overflow-hidden h-[450px] w-full px-4 pt-4">
+          <div className="image-list grid place-items-center h-[350px]  w-full gap-1">
+            <div className="image-item">
+              <AutoPlayCard
+                // key ={data.id}
+                video="/images/IMG_7509.MP4"
+                poster="/images/vlcsnap-2024-05-02-11h09m07s827.png"
+              />
+            </div>
+            <div className="image-item">
+              <AutoPlayCard
+                // key ={data.id}
+                video="/images/IMG_7510.MP4"
+                poster="/images/vlcsnap-2024-05-02-11h10m28s442.png"
+              />
+            </div>
+            <div className="image-item">
+              <AutoPlayCard
+                // key ={data.id}
+                video="/images/IMG_7510.MP4"
+                poster="/images/vlcsnap-2024-05-02-11h11m29s671.png"
+              />
+            </div>
 
-
-
-        {/* <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded">
+            {/* <div className="image-item z-10 flex justify-center items-center bg-accent w-[170px] h-[250px] rounded">
             <video className="object-cover w-full h-full" loop muted playsInline>
               <source src={video3} type="video/MP4" />
             </video>
           </div>   */}
+          </div>
+        </div>
+        <Footer />
       </div>
     </div>
-    <Footer />
-    </div>
-   
-  </div>
-  )
+  );
 }
 
 export default Home;

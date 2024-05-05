@@ -15,6 +15,9 @@ function Films() {
     <div className="flex flex-col md:flex-row">
       <Navbar />
       <div className=" w-full h-screen md:pl-[255px] flex flex-col md:pt-10 justify-between">
+      <h1 className="text-7xl text-center py-5 md:text-8xl md:pt-10 lg:text-[120px] font-planet text-accent">
+            xander
+          </h1>
         <div className="px-4 grid gap-4 grid-cols-1 md:grid-cols-2">
           <div>
             <div style={{ padding: "52.73% 0 0 0", position: "relative" }}>

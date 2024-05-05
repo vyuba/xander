@@ -8,6 +8,9 @@ function Contact() {
     <div className="flex flex-col md:flex-row">
       <Navbar />
       <div className="  w-full h-screen md:pl-[255px] flex flex-col md:pt-10 justify-between">
+      <h1 className="text-7xl text-center py-5 md:text-8xl md:pt-10 lg:text-[120px] font-planet text-accent">
+            xander
+          </h1>
         <div>
           <div className="container-about px-4 text-center leading-relaxed text-secondary">
             <p className="aboutme">
