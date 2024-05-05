@@ -1,11 +1,11 @@
 // import React from 'react'
-import thirsty from "../assets/images/logo.webp"
+import thirsty from "/images/logo.webp"
 // import every from "../assets/images/everynoun logo.png"
 // import j8Agency from "../assets/images/j8Agency logo.png"
-import african from "../assets/images/fullsizeoutput_46f.webp"
+import african from "/images/fullsizeoutput_46f.webp"
 // import kript from "../assets/images/kript logo.png"
-import rager from "../assets/images/4_1_baceae0b-8ee1-4a3a-9ef3-130a223e8dfa_100x.avif"
-import strtSok from "../assets/images/652ebc4b01944cd609be6963_webclip.png"
+import rager from "/images/4_1_baceae0b-8ee1-4a3a-9ef3-130a223e8dfa_100x.avif"
+import strtSok from "/images/652ebc4b01944cd609be6963_webclip.png"
 // import zttw from "../assets/images/zttw logo.png"
 
 function SlideShow() {

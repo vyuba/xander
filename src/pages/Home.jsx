@@ -2,16 +2,16 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import SlideShow from "../components/SlideShow";
-import video1 from "../assets/images/IMG_7509.MP4";
-import video2 from "../assets/images/IMG_7510.MP4";
-import poster1 from "../assets/images/vlcsnap-2024-05-02-11h09m07s827.png";
-import poster2 from "../assets/images/vlcsnap-2024-05-02-11h10m28s442.png";
-import poster3 from "../assets/images/vlcsnap-2024-05-02-11h11m29s671.png";
+// import video1 from "../assets/images/IMG_7509.MP4";
+// import video2 from "../assets/images/IMG_7510.MP4";
+// import poster1 from "../assets/images/vlcsnap-2024-05-02-11h09m07s827.png";
+// import poster2 from "../assets/images/vlcsnap-2024-05-02-11h10m28s442.png";
+// import poster3 from "../assets/images/vlcsnap-2024-05-02-11h11m29s671.png";
 // import video3 from "../assets/images/IMG_7508.MP4"
-import gridImg1 from "../assets/images/IMG_7483.JPG";
-import gridImg2 from "../assets/images/IMG_7475.JPG";
-import gridImg3 from "../assets/images/IMG_7487.JPG";
-import gridImg4 from "../assets/images/IMG_7494.JPG";
+// import gridImg1 from "../assets/images/IMG_7483.JPG";
+// import gridImg2 from "../assets/images/IMG_7475.JPG";
+// import gridImg3 from "../assets/images/IMG_7487.JPG";
+// import gridImg4 from "../assets/images/IMG_7494.JPG";
 // import Loader from "./LoaderPage";
 import VideoCard from "../components/VideoCard";
 import { videoData } from "../data/data"
@@ -52,16 +52,16 @@ function Home() {
       {/* <div className="imageCenter bg-secondary w-[122px] h-[155px] absolute left-[50%] top-[50%]"></div> */}
       <div className="w-full h-[650px] grid gap-5 grid-cols-2 place-items-center">
         <div className="snapImage-item object-cover z-10 bg-accent rounded">
-          <img className="object-cover w-full h-full" src={gridImg1} alt="" />
+          <img className="object-cover w-full h-full" src="/images/IMG_7483.JPG" alt="" />
         </div>
         <div className="snapImage-item bg-accent rounded">
-          <img className="object-cover w-full h-full" src={gridImg2} alt="" />
+          <img className="object-cover w-full h-full" src="/images/IMG_7475.JPG" alt="" />
         </div>
         <div className="snapImage-item bg-accent rounded">
-          <img className="object-cover w-full h-full" src={gridImg3} alt="" />
+          <img className="object-cover w-full h-full" src="/images/IMG_7487.JPG" alt="" />
         </div>
         <div className="snapImage-item bg-accent rounded">
-          <img className="object-cover w-full h-full" src={gridImg4} alt="" />
+          <img className="object-cover w-full h-full" src="/images/IMG_7494.JPG" alt="" />
         </div>
       </div>
     </div>
@@ -110,22 +110,22 @@ function Home() {
         <div className="image-item">
         <AutoPlayCard
             // key ={data.id}
-            video={video1}
-            poster={poster1}
+            video="/images/IMG_7509.MP4"
+            poster="/images/vlcsnap-2024-05-02-11h09m07s827.png"
         />         
         </div>
         <div className="image-item">
         <AutoPlayCard
             // key ={data.id}
-            video={video2}
-            poster={poster2}
+            video="/images/IMG_7510.MP4"
+            poster="/images/vlcsnap-2024-05-02-11h10m28s442.png"
         />
         </div>
         <div className="image-item">
         <AutoPlayCard
             // key ={data.id}
-            video={video2}
-            poster={poster3}
+            video="/images/IMG_7510.MP4"
+            poster="/images/vlcsnap-2024-05-02-11h11m29s671.png"
         />
         </div>
 

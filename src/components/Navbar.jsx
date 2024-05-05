@@ -30,7 +30,7 @@ function Navbar() {
               topic
             </p>
             <div className=" flex justify-evenly items-center">
-              <Link to="/Home">
+              <Link to="/">
                 <li className="w-full lg:w-fit py-2 px-5 hover:bg-blue-700 lg:px-3 xl:px-4 text-secondary text-xl  lg:text-black no-underline bg-transparent font-patino capitalize">
                   Home
                 </li>

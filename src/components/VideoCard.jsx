@@ -10,9 +10,9 @@ function VideoCard(props) {
             loop
             muted
             playsInline
-            poster={`./src/assets/images/${props.image}`}
+            poster={`/images/${props.image}`}
           >
-            <source src={`./src/assets/images/${props.video}`} type="video/MP4" />
+            <source src={`/images/${props.video}`} type="video/MP4" />
           </video>
         </div>
         <div className="pl-2 py-2">
